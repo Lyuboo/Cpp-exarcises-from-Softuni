@@ -1,2 +1,2 @@
 # Cpp-exarcises-from-Softuni
-All exarcises form the course C++ Programming at SoftUni
+All exarcises of the course C++ Programming at SoftUni
