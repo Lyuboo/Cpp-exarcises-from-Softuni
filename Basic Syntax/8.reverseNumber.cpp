@@ -3,13 +3,16 @@
 using namespace std;
 int reverseFunction(int number)
 {
-    int remainder;
+    int remainder, reverseNumber = 0;
     while(number != 0)
     {
         remainder = number % 10;
         number = number / 10;
-        cout << remainder;
+        reverseNumber = reverseNumber + remainder;
+        reverseNumber = reverseNumber * 10;
     }
+    reverseNumber = reverseNumber / 10;
+    return reverseNumber;
 }
 int main()
 {
@@ -17,6 +20,6 @@ int main()
     cout << "Please enter a number: ";
     cin >> inputNum;
 
-    reverseFunction(inputNum);
+    cout << reverseFunction(inputNum);
     return 0;
 }
